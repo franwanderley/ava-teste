@@ -1,0 +1,11 @@
+
+.home .main{
+   display: flex;
+   flex-direction: row;
+   width: 100%;
+   justify-content: flex-start;
+}
+
+@media( max-width: 750px) {
+   
+}

@@ -1,0 +1,73 @@
+.sidebar{
+   display: flex;
+   align-items: flex-start;
+   flex-direction: column;
+   min-width: 20%;
+   height: 90vh;
+   padding: 2% 1%;
+   border-right: 1px solid #ccc;
+   background-color: var(--white);
+   overflow-x: hidden;
+   transition: all .5s ease;
+}
+.sidebar .divActivity{
+   display: flex;
+   flex-direction: row;
+   width: 100%;
+   justify-content: space-around;
+   align-items: center;
+}
+.sidebar .check{
+   transition: color .2s;
+   cursor: pointer;
+}
+.sidebar .check:hover{
+   color: var(--header);
+}
+.sidebar .activity{
+   margin-left: 10px;
+   font-size: 20px;
+   color: var(--text);
+   transform: color .2s;
+   cursor: pointer;
+}
+.sidebar .checked{
+   text-decoration: line-through;
+}
+.sidebar .activity:hover{
+   color: var(--header);
+}
+
+.sidebar .divActivity:last-child{
+   border-bottom: 1px solid #ccc;
+   width: 100%;
+}
+.btn{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+}
+.sidebar .btn-edit{
+   margin: 0 2%;
+   color: blue;
+}
+.sidebar .btn-trash{
+   margin: 0 1%;
+   color: red;
+}
+
+@media( max-width: 1000px) {
+   .sidebar{
+      min-width: 40%;
+      position: fixed;
+      padding: 4% 2%;
+   }
+}
+@media( max-width: 750px) {
+   .sidebar{
+      min-width: 60%;
+   }
+   .sidebar .activity{
+      font-size: 18px;
+   }
+}

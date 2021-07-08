@@ -1,0 +1,39 @@
+
+.header{
+   display: flex;
+   width: 100%;
+   flex-direction: row;
+   justify-content: space-between;
+   background: var(--header);
+   padding: 10px 20px;
+}
+
+.header .title{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   font-size: 20px;
+   color: var(--white);
+}
+
+.header .btnMenu{
+   border: none;
+   cursor: pointer;
+   margin-right: 10px;
+   transition: color .2s;
+}
+.header .btnMenu:hover{
+   color: #eee;
+}
+.header .btn-add{
+   cursor: pointer;
+   width: 40px;
+   height: 40px;
+   border-radius: 50%;
+   background-color: var(--white);
+   border: none;
+   transform: filter .2s;
+}
+.header .btn-add:hover{
+   filter: opacity(.9);
+}

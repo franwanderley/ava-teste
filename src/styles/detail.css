@@ -1,0 +1,25 @@
+
+.detail{
+   display : flex;
+   flex-direction: column;
+   align-items: flex-start;
+   min-width: 0;
+   padding: 15px 50px;
+   text-align: left;
+}
+.detail h3{
+   font-size: 25px;
+   font-weight: 600;
+   margin-bottom: 20px;
+}
+.detail p{
+   font-size: 15px;
+   color: #888;
+   font-weight: 500;
+}
+
+@media( max-width: 750px){
+   .detail{
+      padding: 15px 30px;
+   }
+}
