@@ -53,7 +53,7 @@ export function SideBar(){
 
    if(activities.length === 0)
       return (
-         <div className="sidebar" style={isOpenSideBar ? {} : { minWidth: 0}}>
+         <div className="sidebar" style={isOpenSideBar ? {} : { minWidth: 0, width: 0}}>
             <h3>Sem Atividades no momento!</h3>
          </div>
       );

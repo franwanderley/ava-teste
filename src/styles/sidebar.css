@@ -51,6 +51,9 @@
    margin: 0 2%;
    color: blue;
 }
+.sidebar .btn-edit:hover, .sidebar .btn-trash:hover{
+   filter: opacity(.8);
+}
 .sidebar .btn-trash{
    margin: 0 1%;
    color: red;

@@ -84,9 +84,6 @@ export function ActivityProvider({ children } : ActivityProviderProps) {
     }
   }
   async function deleteActivity(activity: Activity){
-    if(!activity.id)
-      throw new Error('Não foi possivel apagar a atividade!');
-
     const newactivitys = activities.filter(p => p.id !== activity.id);
     setActivities(newactivitys);
 
